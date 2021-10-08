@@ -1,0 +1,36 @@
+---
+title: "Women's Fertility Versus Employment Percentages for Women Ages 15-24"
+author: "Rachel Donahue"
+date: "10-08-2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r, include=FALSE}
+source(file = "wrangling_code.R", echo = TRUE)
+source(file= "visualization_function.R", echo= TRUE)
+```
+
+
+```{r, echo=FALSE, warning=FALSE}
+plot(1990, data)
+
+```
+
+```{r}
+#This plot shows the percentage of employment for women aged 15-24 versus the average number of children per women for the year 1990. There is a large amount of spread in these number, the country that had the highest fertility rate was Yemen, the lowest was Hong Kong, China. The country that had the highest employment rate of young women was Rwanda, the lowest was Jordan.
+```
+
+```{r, echo=FALSE, warning=FALSE}
+plot(2020, data)
+
+```
+
+```{r}
+#This plot shows the percentage of employment for women aged 15-24 versus the average number of children per women for the year 2020. The country with the highest fertility rates was Niger and the lowest was Moldova, the country with the lowest employment percentage of young women was Syria and the highest was Iceland. Compared to 1990, there is a higher amount of dots concentrated towards the bottom, meaning women are having less children and younger women are less likely to be employed across the world, which could indicate a broader global trend that young women are delaying marriage and children and are pursuing higher education and are remaining out of the workforce.
+```
