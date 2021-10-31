@@ -31,6 +31,25 @@ for (year in years) {
 }
 
 
+#your visualization function is perfect I really have no idea how to modify, Let me just make a briefly modify visualization function in order to complete the assignment, if my function is wrong I am sorry for that.
+library(png)
+library(grid)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(magrittr)
+
+plot<- function(para_A,para_B){
+year<-a
+data2<-filter(b, year==a)
+p<-ggplot(data = data2,
+       aes(x = employpercent,y = children)) +
+  geom_point(color="#F3A8EF")+ ylim(0,9) + geom_text(aes(label=test),hjust=0.5, vjust=0) + ggtitle("Fertility Versus Employment Percentage for", year) + labs(x="Employment Percentage of Women Ages 15-24", y="Number of Children")+
+  theme_minimal()
+  geom_point()  
+print(p)
+return(p)
+}
 
 
 
